@@ -1,0 +1,102 @@
+body, html{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #202125;
+    color: #DADADB;
+}
+
+body{
+    max-width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 100vh;
+}
+
+main{
+    margin-top: 80px;
+}
+
+#ResultArea{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Result{
+    line-height: 10px;
+    background: #313135;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 4px;
+}
+
+.Result > h1{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #8ab4f8;
+}
+
+.Result > small{
+    font-style: italic;
+    color: grey;
+}
+
+.Result p{
+    line-height: 20px;
+}
+
+.search-bar-container{
+    position: fixed; 
+    background: rgb(60,41,41);
+    background: linear-gradient(90deg, rgba(60,41,41,1) 0%, rgba(48,48,69,1) 50%, rgba(43,40,57,1) 100%);
+    top: 0;
+    left: 0;
+    padding: 20px 35px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+.search-bar{
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background: rgba(61, 61, 61, .2);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    gap: 10px;
+    transition: .2s ease;
+    border: 1px solid #3C3C3E;
+}
+
+.search-bar > input[type="text"]{
+    caret-color: #668aff;
+    padding: 18px 0;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #DADADB;
+    font-weight: 500;
+    background: transparent;
+    flex: 1;
+}
+
+.search-button{
+    background: #668aff;
+    border: none;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.clear-search{
+    border: none;
+    background: transparent;
+}
+
+p#ResultCount{
+    padding-bottom: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Search with Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="search-bar-container">
+        <div class="search-bar">
+            <button class="search-button" onclick="search()">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="15" height="15"
+                viewBox="0 0 30 30">
+                <path fill="white" d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                </svg>
+            </button>
+            <input type="text" id="SearchBox" placeholder="Procure por algo..."/>
+            <button class="clear-search" onclick="search(all = true); searchBox.value = ''">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 8.7070312 7.2929688 L 7.2929688 8.7070312 L 10.585938 12 L 7.2929688 15.292969 L 8.7070312 16.707031 L 12 13.414062 L 15.292969 16.707031 L 16.707031 15.292969 L 13.414062 12 L 16.707031 8.7070312 L 15.292969 7.2929688 L 12 10.585938 L 8.7070312 7.2929688 z"></path>
+                </svg></button>
+        </div>
+    </header>
+    <main>
+        <div id="ResultArea"></div>
+        <p id="ResultCount"></p>
+    </main>
+    <script src='search.js'></script>
+    <script src='dynamic-styling.js'></script>
+</body>
+</html>
